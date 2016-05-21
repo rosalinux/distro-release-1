@@ -47,7 +47,7 @@ def release_install(distribution,product,Vendor,codename,disturl,bugurl,disttag,
 
     print(rpm.expandMacro("""
 cat > %{buildroot}%{_sysconfdir}/product.id."""+product+""" << EOF
-vendor="""+Vendor+""",distribution="""+distribution+""",type=%{product_type},version=%{version},branch=%{product_branch},release=%{product_release},arch=%{product_arch},product="""+product+"""
+vendor="""+Vendor+""",distribution="""+distribution+""",type=%{product_type},version=%{distepoch},branch=%{product_branch},release=%{product_release},arch=%{product_arch},product="""+product+"""
 EOF
 
 mkdir -p %{buildroot}%{_sys_macros_dir}
@@ -63,7 +63,7 @@ cat > %{buildroot}%{_sys_macros_dir}/"""+Vendor+""".macros << EOF
 %%mdvver            %%mdkver
 
 # productid variable
-%%product_id vendor="""+vendor+",distribution="+distribution+",type=%product_type,version=%{version},branch=%{product_branch},release=%{product_release},arch=%{product_arch},product="+product+"""
+%%product_id vendor="""+vendor+",distribution="+distribution+",type=%product_type,version=%{distepoch},branch=%{product_branch},release=%{product_release},arch=%{product_arch},product="+product+"""
 
 %%product_vendor        """+vendor+"""
 %%product_distribution  """+distribution+"""
@@ -94,7 +94,7 @@ cat > %{buildroot}%{_sysconfdir}/"""+vendor+"""-release << EOF
 """+distribution+""" release %{version} """+codename+""" for %{_target_cpu}
 EOF
 cat > %{buildroot}%{_sysconfdir}/version."""+vendor+""" << EOF
-%{version} %{release} """+codename+"""
+%{distepoch} %{release} """+codename+"""
 EOF
 
 # (tpg) follow standard specifications http://www.freedesktop.org/software/systemd/man/os-release.html
