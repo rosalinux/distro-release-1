@@ -4,7 +4,7 @@
 
 %{python:import sys; sys.path.append(rpm.expandMacro("%{_sourcedir}"))}
 %{python:import distro}
-%define am_i_cooker 1
+%define am_i_cooker 0
 %if %am_i_cooker
 %define distrib Cooker
 %else
@@ -43,7 +43,7 @@ Name:		distro-release
 Epoch:		1
 Version:	3.0
 DistEpoch:	2015.0
-Release:	0.5
+Release:	6
 License:	GPLv2+
 URL:		%{disturl}
 Group:		System/Configuration/Other
