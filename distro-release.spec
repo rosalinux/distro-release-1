@@ -43,7 +43,7 @@ Name:		distro-release
 Epoch:		2
 Version:	3.0
 DistEpoch:	2015.0
-Release:	10
+Release:	11
 License:	GPLv2+
 URL:		%{disturl}
 Group:		System/Configuration/Other

@@ -1,4 +1,3 @@
-
    The OpenMandriva Lx teams are pleased to announce the availability of
    OpenMandriva Lx 3.03!
 
@@ -32,7 +31,12 @@ Recommended Hardware
    architectures are being worked on, but are not yet available for this
    release.
 
-   Important Note
+   Important Note: Font Rendering Currently font rendering is poor in some
+   applications (om-welcome, firefox, Thunderbird and Chromium-Browser)
+   Please see Errata for a workaround. Updated applications are or will be
+   available from our repos.
+
+   Important Note: Graphics Hardware
 
    The KDE Plasma Desktop requires a 3D graphics card that supports OpenGL
    2.0 or above.
@@ -175,7 +179,7 @@ Booting from ISO file
 
    Grub2 entry ( to be added in /boot/grub2/grub.cfg)
 submenu "OpenMandriva (64 bit)" {
-        set isofile=/home/user/OpenMandrivaLx.3.0-PLASMA.x86_64.iso
+        set isofile=/home/user/OpenMandrivaLx.3.03-PLASMA.x86_64.iso
         set isoname=OpenMandrivaLx_3.0
         loopback loop $isofile
 
@@ -209,7 +213,7 @@ LLVM/clang
 
 Kernel
 
-   OpenMandriva Lx uses the latest stable kernel, 4.13.5, by default BFQ
+   OpenMandriva Lx uses the latest stable kernel, 4.13.9, by default BFQ
    is set up as a default I/O scheduler to achieve best performance.
    By default an [81]UKSM is enabled to manage memory efficiently.
 
@@ -224,7 +228,7 @@ systemd
 
 Xorg
 
-   We have upgraded Xorg to version 1.19.4, and Mesa to 17.2.2, which
+   We have upgraded Xorg to version 1.19.5, and Mesa to 17.2.3, which
    brings the latest free drivers for the best performance. A Compose
    cache is now incorporated which speeds up application startup time and
    reduces memory usage especially in locales with large Compose tables
@@ -285,7 +289,7 @@ Calligra Suite 3.0.0
    yet included in the 3.0 release). It is possible to install whole
    calligra suite after installation is finished.
 
-Krita 3.1.3
+Krita 3.3.1
 
    [90]Krita is a creative sketching and painting application. It was part
    of Calligra up to version 2.9 and became a project independent from
@@ -316,7 +320,7 @@ LibreOffice 5.3.3
 
 Web browsing
 
-Qupzilla 2.1.2
+Qupzilla 2.2.0
 
    [92]Qupzilla is a full featured web browser using Qt5WebEngine as a
    rendering engine. More information can be found [93]here.
@@ -324,7 +328,7 @@ Qupzilla 2.1.2
    We encourage you to give qupzilla a try as a new experience in the web
    browsers world.
 
-Firefox 55.0.3
+Firefox 56.0.1
 
    The latest [94]firefox with its new graphical interface and all the
    latest features.
@@ -332,7 +336,7 @@ Firefox 55.0.3
    You may wish to suspend desktop effects when running Firefox is in full
    screen mode, as it speeds up scrolling.
 
-Chromium 59.0.3071.109
+Chromium 61.0.3163.100
 
    A [95]Chromium web browser is available to install it on running system
    either by using urpmi, discover or rpmdrake.
@@ -361,7 +365,7 @@ Sound
 
    [97]ALSA is updated to version 1.1.4
 
-   Pulseaudio version is 11.0, you can find more information about
+   Pulseaudio version is 11.1, you can find more information about
    features [98]here.
 
 Multimedia
