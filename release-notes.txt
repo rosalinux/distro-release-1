@@ -83,7 +83,7 @@ Installer and EFI Support
    This release of OpenMandriva Lx supports booting and installation with
    and without [74]UEFI.
 
-   Best system installation experience is provided by [75]Calamares 3.1
+   Best system installation experience is provided by [75]Calamares 3.1.8
    installer.
 
 What is Calamares ?
@@ -213,7 +213,7 @@ LLVM/clang
 
 Kernel
 
-   OpenMandriva Lx uses the latest stable kernel, 4.13.9, by default BFQ
+   OpenMandriva Lx uses the latest stable kernel, 4.13.12, by default BFQ
    is set up as a default I/O scheduler to achieve best performance.
    By default an [81]UKSM is enabled to manage memory efficiently.
 
@@ -252,7 +252,7 @@ Wayland
 libinput
 
    All the input devices like keyboard, mouse, touchpad and others are now
-   handled though [84]libinput 1.6.3 version library by default.
+   handled though [84]libinput 1.9.2 version library by default.
 
 Desktop
 
@@ -267,7 +267,7 @@ KDE Plasma 5.10.5
    We have upgraded to the latest and greatest version of the KDE Plasma
    desktop. If you don't know what KDE Plasma is, [85]learn more at their
    website.
-   KDE Frameworks are updated to [86]5.38.0 version.
+   KDE Frameworks are updated to [86]5.39.0 version.
    KDE Applications are updated to [87]17.04.0 version.
    We are using Plasma-discover as a main tool for updating distibution.
    Plasma-discover is a Qt5 frontend for PackageKit.
@@ -277,7 +277,7 @@ KDE Plasma 5.10.5
    system requirement is to have a graphics card that can support OpenGL
    2.0 or newer version.
 
-KF 5.38.0
+KF 5.39.0
 
    We have implemented full KDE Framework that allows user to get all of
    benefits of Plasma 5 desktop.
@@ -313,14 +313,14 @@ xfce4 4.12.0
    xfce4 is a very lightweight environment based on GTK+2.0 and GTK+3.0,
    featuring speed, low request on resources combined with a great look.
 
-LibreOffice 5.3.3
+LibreOffice 5.4.3
 
    The latest [91]LibreOffice featuring much faster load times and many
    bug fixes.
 
 Web browsing
 
-Qupzilla 2.2.0
+Qupzilla 2.2.1
 
    [92]Qupzilla is a full featured web browser using Qt5WebEngine as a
    rendering engine. More information can be found [93]here.
@@ -328,10 +328,10 @@ Qupzilla 2.2.0
    We encourage you to give qupzilla a try as a new experience in the web
    browsers world.
 
-Firefox 56.0.1
+Firefox Quantum 57.0
 
-   The latest [94]firefox with its new graphical interface and all the
-   latest features.
+   The latest [94]Firefox Quantum with its new graphical interface and all
+   the latest features.
 
    You may wish to suspend desktop effects when running Firefox is in full
    screen mode, as it speeds up scrolling.
@@ -363,7 +363,7 @@ Printing
 
 Sound
 
-   [97]ALSA is updated to version 1.1.4
+   [97]ALSA is updated to version 1.1.5
 
    Pulseaudio version is 11.1, you can find more information about
    features [98]here.
