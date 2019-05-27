@@ -14,7 +14,7 @@
 %define new_disturl http://openmandriva.org/
 %define new_bugurl http://issues.openmandriva.org/
 
-%define am_i_cooker 1
+%define am_i_cooker 0
 %define am_i_rolling 0
 %if %am_i_cooker
 %define distrib Cooker
@@ -59,12 +59,12 @@
 
 Summary:	%{new_distribution} release file
 Name:		distro-release
-Version:	4.0.1
+Version:	4.0
 # (tpg) something needs to be done to make comparision 3.0 > 2015.0 came true
 # 3001 = 3.1
 # 3001 = 3.2 etc.
 DistTag:	%{shorttag}%{distro_tag}
-Release:	0.1
+Release:	1
 License:	GPLv2+
 URL:		%{new_disturl}
 Group:		System/Configuration/Other
