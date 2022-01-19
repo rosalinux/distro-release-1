@@ -1010,6 +1010,18 @@ EOF
                 done
         done
 done
+
+## Ayya repo
+cat >>%{buildroot}%{_sysconfdir}/yum.repos.d/openmandriva-ayya.repo <<EOF
+[ayya-pkgs]
+name="$NAME - ROSA AYYA SPECIAL PACKAGES"
+baseurl=file:///opt/ayya-repo
+gpgcheck=0
+enabled=1
+type=rpm-md
+
+EOF
+
 sed -i '$ d' %{buildroot}%{_sysconfdir}/yum.repos.d/*.repo
 
 ## And enable the one we're installing from
